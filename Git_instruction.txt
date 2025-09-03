@@ -1,0 +1,22 @@
+git1. Задаем параметры пользователя 
+	git config --global user.name "My Name"
+	git config --global user.email myEmail@example.com
+2. Создание репозитория 
+	git init
+	git status - определение состояния 
+3. Добавление файла к комиту(Индексирование)
+	git add -A/.txt/.py 
+	git reset <file name>
+4. Создание коммита
+	git commit -m 'Add some code'
+	git log - просмотр всех коммитов 
+	git show <hash_commit> - просмотр комита по хэшу
+	git commit --amend -m 'Комментарий' - изменение крайнего комментария 
+5. Удаленный репозитоорий 
+	git clone https://github.com/tutorialzine/awesome-project - клонирование репозитория 
+	git remote add origin https://github.com/tutorialzine/awesome-project.git - подключение к репозиторию 
+	git push origin master - отправка изменений на сервер
+	git pull origin master - запрос изменений с сервера 
+6. Работа с ветками 
+	git branch -v -информация о ветках с последним комитом 
+	git checkout name_branch - переключение на другую ветку  
